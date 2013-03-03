@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{D078D564-23C0-FD59-379D-DBA2E4C3320B}</ProjectGuid>
+	<ProjectGuid>{6E0B8337-3672-F992-06B3-503D35E8A36B}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,19 +44,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Core\Interfaces\IntelPerC.cs" />
-     <Compile Include="Assets\Core\Interfaces\ManLeap.cs" />
-     <Compile Include="Assets\Core\Interfaces\ManPerC.cs" />
-     <Compile Include="Assets\Core\Shelf\Placer.cs" />
-     <Compile Include="Assets\Core\Shelf\Rearranger.cs" />
-     <Compile Include="Assets\Core\TheShelfMan.cs" />
-     <Compile Include="Assets\Core\Utils\GoManips.cs" />
-     <Compile Include="Assets\Core\Utils\Mathf2.cs" />
-     <Compile Include="Assets\Core\Utils\Parse.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{6E0B8337-3672-F992-06B3-503D35E8A36B}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+     <Compile Include="Assets\Plugins\pxcm-structures.cs" />
+     <Compile Include="Assets\Plugins\pxcupipeline.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

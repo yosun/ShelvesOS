@@ -37,19 +37,26 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity357/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity357/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Core\Interfaces\IntelPerC.cs" />
+     <Compile Include="Assets\Core\Interfaces\ManLeap.cs" />
+     <Compile Include="Assets\Core\Interfaces\ManPerC.cs" />
      <Compile Include="Assets\Core\Shelf\Placer.cs" />
      <Compile Include="Assets\Core\Shelf\Rearranger.cs" />
      <Compile Include="Assets\Core\TheShelfMan.cs" />
      <Compile Include="Assets\Core\Utils\GoManips.cs" />
      <Compile Include="Assets\Core\Utils\Mathf2.cs" />
      <Compile Include="Assets\Core\Utils\Parse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{6E0B8337-3672-F992-06B3-503D35E8A36B}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
